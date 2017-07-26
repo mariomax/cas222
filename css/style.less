@@ -1,0 +1,308 @@
+/*
+File Name: style.less
+Date: 7/19/2017
+Programmer: Mario Lopriore
+*/
+
+
+/* These are imported from the mixins.less file. */
+
+@import 'mixins.less';
+@import 'palette.less';
+
+/* Styling the navigation */
+nav {
+    margin-top: 1em;
+    line-height: 2em;
+    text-align: center;
+    ul {
+        li {
+            font-family: @bodyFont;
+        }
+    }
+    .tabletPlus-menu {
+        display: none;
+    }
+}
+
+/* Mobile navigation styling classes for JavaScript menu */
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+
+/* This is the hamburger's horizontal lines */
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px auto;
+	background: rgb(0,0,0);
+	z-index: 99;
+}
+
+/* The styling for the links in the dropdown menu */
+.responsive-menu{
+	display: none;
+    a {
+        color: @color2;
+        font-size: 1.1em;
+        line-height: 2.8;
+        text-decoration: none;
+    }
+}
+ 
+.expand {
+	display: block !important; 
+}
+ 
+header {
+    margin: auto;
+    img {
+        display: block;
+        margin: auto;
+        width: 70%;
+    }
+}
+
+/* This is the styling around the slideshow */
+.fullSlider {
+    background-color: @color2;
+    padding: 2em;
+    img {
+        display: block;
+        margin: auto;
+        max-width: 90%;
+    }
+}
+
+.sideSlider {
+    display: none;
+}
+
+h1 {
+    color: @color2;
+    font-family: @headlineFont;
+    text-align: center;
+}
+
+h2 {
+    color: @color4;
+    font-family: @headlineFont;
+    text-align: center;
+}
+
+h3 {
+    font-family: @headlineFont;
+    text-align: center;
+}
+
+h4 {
+    font-family: @bodyFont;
+    margin-left: 2em;
+}
+
+section {
+    ul {
+        li {
+            font-family: @bodyFont;
+            line-height: 1.5em;
+            margin-left: 2.5em;
+        }
+    }
+    p {
+        font-family: @bodyFont;
+        padding: .7em;
+        line-height: 1.2em;
+    }
+}
+
+form {
+   font-family: @bodyFont;
+    text-align: center;
+}
+
+aside {
+        font-family: @bodyFont;
+        text-align: center;
+    blockquote {
+        border: 3px solid @color3;
+        line-height: 2em;
+        padding: .5em;
+    }
+}
+
+/* Removes tablet and desktop asides from cascade until tablet size. */
+.tabletAside {
+    display: none;
+}
+
+.deskAside {
+    display: none;
+}
+
+footer {
+    background-color: @color4;
+    color: @color1;
+    text-align: center;
+    div {
+        .fa {
+            color: @color1;
+            font-size: 2em;
+            text-align: center;
+            padding: .7em .5em;
+        }
+    }
+    p {
+        font-family: @bodyFont;
+        padding: .5em;
+        line-height: 1.2em;
+    }
+}
+
+/* Tablet CSS code and up */
+@media only screen and (min-width: 481px) {
+    
+    /* This is the navigation out of the hamburger menu. */
+    .menu-btn {
+        display: none;
+    }
+    
+    .responsive-menu {
+        display: none;
+    }
+    
+    nav {
+        margin-top: 0;
+        .tabletPlus-menu {
+            display: block;
+            ul {
+                background-color: @color4;
+                padding: 1.3em;
+                li {
+                    display: inline;
+                    font-size: 1.5em;
+                    padding: 0 1.5em;
+                    a {
+                        color: @color1;
+                        text-decoration: none;
+                    }
+                    a:visited {
+                        color: @color3; 
+                    }
+                    a:hover {
+                        color: @color2;
+                    }
+                }
+            }
+        }
+    }
+    
+    /* Header adapted for tablet */
+    header {
+        img {
+            width: 60%;
+        }
+        h1 {
+            padding-top: 1em;
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 1.5em;
+            font-style: italic; 
+        }
+    }
+    
+    section {
+        h3 {
+            font-weight: 700;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+        p {
+            padding: .5em 2em;
+            line-height: 1.5em;
+        } 
+    }
+    
+    aside {
+        blockquote {
+            line-height: 5.5em;
+        }
+    }
+    
+    .tabletAside {
+        display: block;
+    }
+    
+    .mobileAside {
+        display: none;
+    }
+    
+    footer {
+        clear: both;
+    }
+}
+
+/* Desktop CSS code and up */
+@media only screen and (min-width: 1025px) {
+    
+    nav {
+        ul {
+            li {
+                padding: 2.5em; 
+            }
+        }
+    }
+    
+    header {
+        img {
+            width: 50%;
+        }
+        h1 {
+            padding-top: .8em;
+            font-size: 2.3em;
+        }
+        h2 {
+            font-size: 1.9em; 
+        }    
+    }
+    
+    .fullSlider {
+        display: none;
+    }
+    
+    .sideSlider {
+        display: block;
+        background-color: @color2;
+        padding: 2em;
+        img {
+            display: block;
+            margin: auto;
+            width: 80%;
+        }
+    }
+    
+    .tabletAside {
+        display: none;
+    }
+    
+    .deskAside {
+        display: block;
+        blockquote {
+            line-height: 8.5em;    
+        } 
+    }
+    
+    .hideContent {
+        display: none;
+    }
+}
