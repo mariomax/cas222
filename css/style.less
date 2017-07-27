@@ -74,6 +74,7 @@ header {
 }
 
 /* This is the styling around the slideshow */
+/* fullSlider is full width in mobile and tablet sizes. */
 .fullSlider {
     background-color: @color2;
     padding: 2em;
@@ -84,6 +85,7 @@ header {
     }
 }
 
+/* sideSlider is the desktop slideshow - it's in a 9_of_12 grid. */
 .sideSlider {
     display: none;
 }
@@ -126,13 +128,14 @@ section {
 }
 
 form {
-   font-family: @bodyFont;
+    font-family: @bodyFont;
     text-align: center;
 }
 
 aside {
         font-family: @bodyFont;
         text-align: center;
+    /* Using blockquote until <scripts> and <divs> are created for social media and the weather API */
     blockquote {
         border: 3px solid @color3;
         line-height: 2em;
@@ -176,6 +179,7 @@ footer {
         display: none;
     }
     
+    /* Removing the hamburger menu from tablet size and up. */
     .responsive-menu {
         display: none;
     }
@@ -239,10 +243,12 @@ footer {
         }
     }
     
+    /* Restoring the tablet display. */
     .tabletAside {
         display: block;
     }
     
+    /* Removing the mobile display. */
     .mobileAside {
         display: none;
     }
@@ -276,10 +282,12 @@ footer {
         }    
     }
     
+    /* Removing the full width slider from view at desktop size. */
     .fullSlider {
         display: none;
     }
     
+    /* Begin viewing partial width slider at desktop size. */
     .sideSlider {
         display: block;
         background-color: @color2;
@@ -291,10 +299,12 @@ footer {
         }
     }
     
+    /* Removes tablet aside for social media feeds and weather API */
     .tabletAside {
         display: none;
     }
     
+    /* Restores aside for social media feeds and weather API on desktop. */
     .deskAside {
         display: block;
         blockquote {
@@ -302,6 +312,7 @@ footer {
         } 
     }
     
+    /* Removes other full page content from desktop display - template only! */
     .hideContent {
         display: none;
     }

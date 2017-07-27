@@ -54,7 +54,8 @@
             
         </aside>
         </div>    
-            
+        
+        <!-- About page content goes here. -->
         <div class="col span_9_of_12">
             <h3>Page Title (h3)</h3>
             <p>Paragraph (p) Portland man braid ad flannel PBR lomo chambray skateboard venmo lumbersexual viral pour-over quinoa nulla dreamcatcher. Kitsch elit deserunt brooklyn, letterpress consequat minim. Cillum aesthetic food truck est kitsch tattooed tofu literally sed sunt. Cold-pressed coloring book neutra selfies.</p>
@@ -73,7 +74,7 @@
             <p>Paragraph (p)</p>        
         </div>
         
-        <!-- Weather API and social media feeds section for tablet only -->
+        <!-- Weather API and social media feeds section for tablet only. -->
         <div class="col span_3_of_12">
         <aside class="tabletAside">
             
@@ -87,7 +88,8 @@
         </section>
          
         <section class="section group">
-        <!--  Register content section -->
+            
+        <!--  Register content goes here. -->
         <div class="register hideContent col span_9_of_12" id="register">
             <h3>Page Title (h3)</h3>
             <h4>Page Info (h4)</h4>
@@ -105,10 +107,11 @@
             <p>Paragraph (p)</p>
             <h4>Headline (h4)</h4>
             <p>Paragraph (p)</p>
+            <!-- The PHP form will be an include with a control page.  -->
             <form>Form (PHP form)</form>
         </div>
     
-            <!-- FAQ content section -->
+            <!-- FAQ content goes here. -->
             <section class="FAQs hideContent col span_9_of_12" id="FAQs">
                 <h3>Page Title (h3)</h3>
                 <p>Paragraph</p>
@@ -121,15 +124,16 @@
                 <p>Paragraph</p>
             </section>
     
-            <!-- Contact content section -->
+            <!-- Contact content goes here. -->
             <div class="contact hideContent col span_9_of_12" id="contact">
                 <h3>Page Title (h3)</h3>
+                <!-- The PHP form will be an include with a control page. -->
                 <form>Form (PHP form)</form>
                 <p>Paragraph</p>
             </div>
             </section>
     
-            <!-- Weather API and social media feeds section in mobile view only -->
+            <!-- Weather API and social media feeds section in mobile view only. -->
             <aside class="mobileAside">
                 <blockquote>Weather API</blockquote>
                 <blockquote>Social Feed</blockquote>

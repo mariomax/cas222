@@ -21,6 +21,7 @@
     </div>
     
     <!-- Navigation for tablet and desktop sizes -->
+    <!-- Replace href="xxx" with URLs for actual pages! -->
     <div class="tabletPlus-menu">
         <ul>
             <li><a href="#about">About</a></li>
