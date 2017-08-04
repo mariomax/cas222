@@ -9,8 +9,8 @@
         
         <!-- Placing the title and tagline in a grid above mobile size -->
         <div class="col span_8_of_12">
-            <h1>Site Title (h1)</h1>
-            <h2>Site Tagline (h2)</h2>
+            <h1>Ace in the Hole</h1>
+            <h2>MultiSport Events</h2>
         </div>
     </section>
     

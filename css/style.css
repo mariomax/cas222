@@ -114,6 +114,7 @@ section p {
   line-height: 1.2em;
 }
 form {
+  color: #ff0000;
   font-family: 'Ropa Sans', sans-serif;
   text-align: center;
 }
