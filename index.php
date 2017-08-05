@@ -38,25 +38,17 @@
         <div class="fullSlider">
             <img src="images/image_wf.png" alt="image">
         </div>    
-        
-        <!-- JavaScript slideshow for desktop. -->
+
+        <!-- JavaScript slideshow for desktop.
         <div class="sideSlider col span_9_of_12">
             <img src="images/image_wf.png" alt="image">
         </div>
-                   
-        <!-- Weather API and social media feeds section for desktop only -->
-        <div class="col span_3_of_12">
-        <aside class="deskAside">
-            
-            <blockquote>Weather API</blockquote>
-            <blockquote>Social Feed</blockquote>
-            <blockquote>Social Feed</blockquote>
-            
-        </aside>
-        </div>    
+                   -->
+   
         
         <!-- About page content goes here. -->
         <div class="col span_9_of_12">
+            <img src="images/image_wf.png" alt="image">
             <h3>ABOUT THE EVENT</h3>
             <p>The Annual Ace in the Hole MultiSport Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation.</p>
             <p>There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!</p>
@@ -71,20 +63,33 @@
             <p>You must finish the race with your bib number on the front of you.  Some people choose to pin it on at the beginning of the race and have it on for the whole event so they don’t have to worry about it.  Others pin it on a singlet that they put on once they finish the swim before they head out for the bike.  Others use an elastic racing strap that they pin their bib number to and then quickly strap it on before they leave for the run.  Use whatever option feels best for you.</p>
             <p>Remember to bring a change of clothing so you can enjoy the post-event festivities. </p>        
         </div>
-        
+
+        <!-- Weather API and social media feeds section for desktop only -->
+        <div class="col span_3_of_12">
+        <aside class="deskAside">
+            
+            <blockquote>Weather API</blockquote>
+            <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote>Social Feed</blockquote>
+            
+        </aside>
+        </div> 
+            
         <!-- Weather API and social media feeds section for tablet only. -->
         <div class="col span_3_of_12">
         <aside class="tabletAside">
             
             <blockquote>Weather API</blockquote>
-            <blockquote>Social Feed</blockquote>
+            <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             <blockquote>Social Feed</blockquote>
             
         </aside>
         </div>
             
-        </section>
-         
+        
+         </section>
         <section class="section group">
             
         <!--  Register content goes here. -->
@@ -94,10 +99,10 @@
             <ul>
                 <li>Long Course - $240</li>	  	
                 <li>Olympic - $110</li>	  	
-                <li>10K - $50</li>	  	
-                <li>Half Marathon - $75</li>	
-                <li>Sprint - $90</li>
+                <li>Sprint - $90</li>	  	
                 <li>Try-a-Tri - $65</li>
+                <li>Half Marathon - $75</li>
+                <li>10K - $50</li>
             </ul>
             <h4>COURSE DETAILS</h4>
             <p>WATER TEMPERATURE is expected to be between 62 – 66 degrees. The temperature will be taken on Friday and the morning of the race. Wetsuits are recommended.</p>
@@ -122,7 +127,9 @@
             <h4>10k COURSE:</h4>
             <p>The 10K event starts and finishes in the Athletes Village. The paths are approximately 6-ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.</p>
             <!-- The PHP form will be an include with a control page.  -->
-            <form>Form (PHP form)</form>
+            
+            <?php include 'includes/index.php'; ?>
+            
             <h3>COST INCLUDES</h3>
                 <ul>
                     <li>Food &amp; Beer</li>
@@ -156,14 +163,15 @@
             <div class="contact col span_9_of_12" id="contact">
                 <h3>CONTACT</h3>
                 <!-- The PHP form will be an include with a control page. -->
-                <form>Form (PHP form)</form>
+                <?php include 'includes/contact.php'; ?>
             </div>
             </section>
     
             <!-- Weather API and social media feeds section in mobile view only. -->
             <aside class="mobileAside">
                 <blockquote>Weather API</blockquote>
-                <blockquote>Social Feed</blockquote>
+                <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 <blockquote>Social Feed</blockquote>
             </aside>
 
