@@ -1,9 +1,9 @@
 <?php
 
 if (isset($_POST['name'])) {
+    $event = $_POST['event'];
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $comment = $_POST['comment'];
     
     try
     {
@@ -21,28 +21,27 @@ if (isset($_POST['name'])) {
 
     try
     {
-        $sql = 'INSERT INTO contact SET
+        $sql = 'INSERT INTO register SET
+            event = :event,
             name = :name,
-            email = :email,
-            comment = :comment';
+            email = :email';
         
         // Field names need to match those from the database.
         $s = $pdo->prepare($sql);
+        $s->bindValue(':event', $event);
         $s->bindValue(':name', $name);
         $s->bindValue(':email', $email);
-        $s->bindValue(':comment', $comment);
         // The $_POST['myName'] values need to match the "name" of the form field in the register.html.php file.
-        // See other notes about this in the contact\index.php file.
 
         $s->execute();
     }
     catch (PDOException $e)
     {
-        $error = 'Error adding submitted author.';
+        $error = 'There was an error with your registration.';
         include 'error.html.php';
         exit();
     }
         include 'success.html.php';
 } else {
-        include 'contact.html.php';
+        include 'register.html.php';
 }

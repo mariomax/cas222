@@ -25,6 +25,15 @@
 
 
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=169435913604040";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
     <!-- This is the navigation from the includes folder. -->
     <?php include 'includes/nav.inc.html.php'; ?>
     
@@ -48,7 +57,9 @@
         
         <!-- About page content goes here. -->
         <div class="col span_9_of_12">
+            <div class="sideSlider">
             <img src="images/image_wf.png" alt="image">
+            </div>
             <h3>ABOUT THE EVENT</h3>
             <p>The Annual Ace in the Hole MultiSport Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation.</p>
             <p>There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!</p>
@@ -71,7 +82,7 @@
             <blockquote>Weather API</blockquote>
             <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <blockquote>Social Feed</blockquote>
+            <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
             
         </aside>
         </div> 
@@ -83,7 +94,7 @@
             <blockquote>Weather API</blockquote>
             <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <blockquote>Social Feed</blockquote>
+            <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
             
         </aside>
         </div>
@@ -128,7 +139,7 @@
             <p>The 10K event starts and finishes in the Athletes Village. The paths are approximately 6-ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.</p>
             <!-- The PHP form will be an include with a control page.  -->
             
-            <?php include 'includes/index.php'; ?>
+            <?php include 'includes/register/index.php'; ?>
             
             <h3>COST INCLUDES</h3>
                 <ul>
@@ -163,7 +174,7 @@
             <div class="contact col span_9_of_12" id="contact">
                 <h3>CONTACT</h3>
                 <!-- The PHP form will be an include with a control page. -->
-                <?php include 'includes/contact.php'; ?>
+                <?php include 'includes/contact/index.php'; ?>
             </div>
             </section>
     
@@ -172,7 +183,7 @@
                 <blockquote>Weather API</blockquote>
                 <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <blockquote>Social Feed</blockquote>
+                <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
             </aside>
 
             <!-- This is the footer from the includes folder. -->
