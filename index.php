@@ -19,6 +19,9 @@
     <!-- Font Awesome! -->
     <script src="https://use.fontawesome.com/ef441b60f1.js"></script>
     
+    <!-- Include the 32 x 32 px favicon for the browser tab. -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
     <!-- jQuery library script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head> 
@@ -94,7 +97,7 @@
             <blockquote>Weather API</blockquote>
             <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
+            <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
             
         </aside>
         </div>
@@ -137,6 +140,22 @@
             <p>Half-Marathon event starts and finishes in the Athletes Village to the cheers of the enthusiastic crowd. Once finished, runners can enjoy the finish line festivities, including the Sports &amp; Fitness Expo and live entertainment. Post-race refreshments will be provided and the Awards Ceremony for the Half-Marathon will begin once the results have been certified</p>
             <h4>10k COURSE:</h4>
             <p>The 10K event starts and finishes in the Athletes Village. The paths are approximately 6-ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.</p>
+            
+            <h3>START TIMES</h3>
+            <h4>Saturday</h4>
+            <ul>
+                <li>Long Course - 7:00 am</li>
+                <li>Olympic - 7:30 am</li>
+                <li>10K - 7:15</li>
+                <li>Half Marathon - 7:15 am</li>
+            </ul>
+            <h4>Sunday</h4>
+            <ul>
+                <li>Sprint - 8:00 am</li>
+                <li>Try-a-Tri - 8:20 am</li>
+                <li>Splash n Dash - 12:00 pm</li>
+            </ul>
+            
             <!-- The PHP form will be an include with a control page.  -->
             
             <?php include 'includes/register/index.php'; ?>
@@ -159,14 +178,14 @@
             <!-- "hideContent" was removed from the following div for development. --> 
             <section class="FAQs col span_9_of_12" id="FAQs">
             <h3>FAQs</h3>
-                <p>What are the Rules? We currently adhere to the USAT Rules for Triathlon & Duathlon.  Important rules include no drafting, you must wear a helmet and music is ABSOLUTELY NOT allowed during the bike for obvious safety reasons.</p>
-                <p>Can I use a personal music device while cycling? Absolutely no music devices are allowed during the bike segment for obvious safety risks and will result in immediate disqualification.</p>
-                <p>Can I use a personal music device while running? During any running segments, we prefer for athletes to NOT use music devices to maximize safety, assure a fair competitive environment and assure athletes can hear all course marshal instructions. With that said, we also understand that many athletes rely on music to help endure the challenge of running. To accommodate the needs of our athletes while still assuring maximum safety and a fair, competitive environment, here is the arrangement that we can accommodate.</p>
+                <p><span class="q">What are the Rules?</span> We currently adhere to the USAT Rules for Triathlon & Duathlon.  Important rules include no drafting, you must wear a helmet and music is ABSOLUTELY NOT allowed during the bike for obvious safety reasons.</p>
+                <p><span class="q">Can I use a personal music device while cycling?</span> Absolutely no music devices are allowed during the bike segment for obvious safety risks and will result in immediate disqualification.</p>
+                <p><span class="q">Can I use a personal music device while running?</span> During any running segments, we prefer for athletes to NOT use music devices to maximize safety, assure a fair competitive environment and assure athletes can hear all course marshal instructions. With that said, we also understand that many athletes rely on music to help endure the challenge of running. To accommodate the needs of our athletes while still assuring maximum safety and a fair, competitive environment, here is the arrangement that we can accommodate.</p>
                 <p>If you chose to use a personal music device, you must always keep one ear open for instructions so only one ear-bud can be used at any time. In addition, if you opt to use music, you will not be eligible for awards, points and rankings. So as an athlete, you have to make a choice…music or awards/points/rankings.</p>
                 <p>If you are using a personal music devise with two earbuds, you will be immediately disqualified. Trust us, we don’t want to have to enforce a disqualification but in order to assure the safety of all athletes, this is a very important rule.</p>
                 <p>We also request that if you chose to use a personal music device that you keep the volume to a minimum to assure all instructions can be heard.</p>
-                <p>Do I need to wear a wetsuit?  No, you do not need to wear a wetsuit. Many will not wear a wetsuit while others will choose to wear a wetsuit because of the buoyancy and warmth factor. </p>
-                <p>Do I have to use a road or racing bike?  No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</p>
+                <p><span class="q">Do I need to wear a wetsuit?</span>  No, you do not need to wear a wetsuit. Many will not wear a wetsuit while others will choose to wear a wetsuit because of the buoyancy and warmth factor. </p>
+                <p><span class="q">Do I have to use a road or racing bike?</span>  No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</p>
             </section>
     
             <!-- Contact content goes here. -->
@@ -190,7 +209,7 @@
             <?php include 'includes/footer.inc.html.php'; ?>
  </main>   
             <!-- jQuery hamburger menu control -->
-            <!-- This version doesn't closes with a click. -->
+            <!-- This version doesn't close with a click. -->
             <!--
             <script type="text/javascript">
                 jQuery(function ($) {

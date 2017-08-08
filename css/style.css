@@ -115,7 +115,9 @@ section p {
 }
 form {
   color: #ff0000;
+  display: block;
   font-family: 'Ropa Sans', sans-serif;
+  padding: .3em;
   text-align: center;
 }
 aside {
@@ -127,6 +129,9 @@ aside blockquote {
   border: 3px solid #cfcfcf;
   line-height: 2em;
   padding: .5em;
+}
+.q {
+  font-style: italic;
 }
 /* Removes tablet and desktop asides from cascade until tablet size. */
 .tabletAside {
@@ -209,6 +214,12 @@ footer p {
   }
   aside blockquote {
     line-height: 5.5em;
+  }
+  form {
+    text-align: left;
+  }
+  form label {
+    padding: .5em;
   }
   /* Restoring the tablet display. */
   .tabletAside {

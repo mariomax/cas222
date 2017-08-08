@@ -2,6 +2,7 @@
 
 if (isset($_POST['name'])) {
     $event = $_POST['event'];
+    $sunevent = $_POST['sunevent'];
     $name = $_POST['name'];
     $email = $_POST['email'];
     
@@ -23,12 +24,14 @@ if (isset($_POST['name'])) {
     {
         $sql = 'INSERT INTO register SET
             event = :event,
+            sunevent = :sunevent,
             name = :name,
             email = :email';
         
         // Field names need to match those from the database.
         $s = $pdo->prepare($sql);
         $s->bindValue(':event', $event);
+        $s->bindValue(':sunevent', $sunevent);
         $s->bindValue(':name', $name);
         $s->bindValue(':email', $email);
         // The $_POST['myName'] values need to match the "name" of the form field in the register.html.php file.
@@ -41,7 +44,7 @@ if (isset($_POST['name'])) {
         include 'error.html.php';
         exit();
     }
-        include 'success.html.php';
+        include ('success.html.php');
 } else {
-        include 'register.html.php';
+        include ('register.html.php');
 }

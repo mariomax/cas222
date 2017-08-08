@@ -10,9 +10,9 @@
             <input type="text" name="c_name" id="c_name" required><br>
             <label for="c_email">*Email:</label>
             <input type="text" name="c_email" id="c_email" required><br>
-            <label for="comment">Additional comments:</label>
+            <label for="comment">Comments:</label>
             <textarea rows="4" cols="50" type="text" name="comment" id="comment">
-            </textarea>
+            </textarea><br>
             <input type="submit">
         </form>
 </html>

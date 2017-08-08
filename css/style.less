@@ -129,7 +129,9 @@ section {
 
 form {
     color: @color2;
+    display: block;
     font-family: @bodyFont;
+    padding: .3em;
     text-align: center;
 }
 
@@ -142,6 +144,10 @@ aside {
         line-height: 2em;
         padding: .5em;
     }
+}
+
+.q {
+    font-style: italic;
 }
 
 /* Removes tablet and desktop asides from cascade until tablet size. */
@@ -241,6 +247,13 @@ footer {
     aside {
         blockquote {
             line-height: 5.5em;
+        }
+    }
+    
+    form {
+        text-align: left;
+        label {
+            padding: .5em;
         }
     }
     

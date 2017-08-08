@@ -41,7 +41,7 @@ if (isset($_POST['c_name'])) {
         include 'error.html.php';
         exit();
     }
-        include 'success.html.php';
+        include ('success.html.php');
 } else {
-        include 'contact.html.php';
+        include ('contact.html.php');
 }
