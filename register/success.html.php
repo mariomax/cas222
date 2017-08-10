@@ -7,6 +7,8 @@
     <body>
 
         <main>
+            <?php include ('header.inc.html.php'); ?>
+            <?php include ('nav.inc.html.php'); ?>
             <h2>Success!</h2>
             <p>You successfully submitted your info to the database.</p>
             <p>Saturday Event: <?php echo htmlspecialchars($event, ENT_QUOTES, 'UTF-8'); ?><br>

@@ -158,7 +158,7 @@
             
             <!-- The PHP form will be an include with a control page.  -->
             
-            <?php include 'includes/register/index.php'; ?>
+            <?php include 'register/index.php'; ?>
             
             <h3>COST INCLUDES</h3>
                 <ul>
@@ -193,7 +193,7 @@
             <div class="contact col span_9_of_12" id="contact">
                 <h3>CONTACT</h3>
                 <!-- The PHP form will be an include with a control page. -->
-                <?php include 'includes/contact/index.php'; ?>
+                <?php include 'contact/index.php'; ?>
             </div>
             </section>
     
