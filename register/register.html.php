@@ -5,7 +5,7 @@
         <title>Ace in the Hole Registration</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-        <form method="post" action="index.reg.php">
+        <form method="post" action="register/index.php">
             <label for="event">Saturday Events:</label><br>
             <input type="radio" name="event" id="event" value="long_course"> Long Course<br>
             <input type="radio" name="event" id="event" value="olympic"> Olympic<br>
