@@ -19,9 +19,9 @@
             <input type="radio" name="sunevent" id="sunevent" value="splash-n-dash"> Splash n Dash<br>
             <input type="radio" name="sunevent" id="sunevent" value="none"> None<br>
             
-            <label for="name">*Name:</label>
+            <label for="name">*Name:</label><br>
             <input type="text" name="name" id="name" required><br>
-            <label for="email">*Email:</label>
+            <label for="email">*Email:</label><br>
             <input type="text" name="email" id="email" required><br>
             <input type="submit">
         </form>

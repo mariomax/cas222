@@ -43,22 +43,22 @@
     <!-- This is the header from the includes folder. -->
     <?php include 'includes/header.inc.html.php'; ?>
 <main>   
-        <!-- Main content section -->
+    <!-- Main content section -->
         <section class="section group" id="about">
         
-        <!-- JavaScript slideshow for mobile and tablet. -->
+    <!-- JavaScript slideshow for mobile and tablet. -->
         <div class="fullSlider">
             <img src="images/image_wf.png" alt="image">
         </div>    
 
-        <!-- JavaScript slideshow for desktop.
+    <!-- JavaScript slideshow for desktop.
         <div class="sideSlider col span_9_of_12">
             <img src="images/image_wf.png" alt="image">
-        </div>
-                   -->
+        </div>              
+    -->
    
         
-        <!-- About page content goes here. -->
+    <!-- About page content goes here. -->
         <div class="col span_9_of_12">
             <div class="sideSlider">
             <img src="images/image_wf.png" alt="image">
@@ -90,7 +90,7 @@
         </aside>
         </div> 
             
-        <!-- Weather API and social media feeds section for tablet only. -->
+    <!-- Weather API and social media feeds section for tablet only. -->
         <div class="col span_3_of_12">
         <aside class="tabletAside">
             
@@ -106,8 +106,8 @@
          </section>
         <section class="section group">
             
-        <!--  Register content goes here. -->
-        <!-- "hideContent" was removed from the following div for development. --> 
+    <!--  Register content goes here. -->
+    <!-- "hideContent" was removed from the following div for development. --> 
         <div class="register col span_9_of_12" id="register">
             <h3>REGISTRATION</h3>
             <ul>
@@ -156,7 +156,7 @@
                 <li>Splash n Dash - 12:00 pm</li>
             </ul>
             
-            <!-- The PHP form will be an include with a control page.  -->
+        <!-- The PHP form will be an include with a control page.  -->
             
             <?php include 'register/index.php'; ?>
             
@@ -174,8 +174,8 @@
                 <p>All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR. Packet pick up hours: Thursday 8-5, Friday 9-noon. No day of event packet pick up.</p>
             </div>
     
-            <!-- FAQ content goes here. -->
-            <!-- "hideContent" was removed from the following div for development. --> 
+        <!-- FAQ content goes here. -->
+        <!-- "hideContent" was removed from the following div for development. --> 
             <section class="FAQs col span_9_of_12" id="FAQs">
             <h3>FAQs</h3>
                 <p><span class="q">What are the Rules?</span> We currently adhere to the USAT Rules for Triathlon & Duathlon.  Important rules include no drafting, you must wear a helmet and music is ABSOLUTELY NOT allowed during the bike for obvious safety reasons.</p>
@@ -188,8 +188,7 @@
                 <p><span class="q">Do I have to use a road or racing bike?</span>  No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</p>
             </section>
     
-            <!-- Contact content goes here. -->
-            <!-- "hideContent" was removed from the following div for development. --> 
+        <!-- Contact content goes here. -->
             <div class="contact col span_9_of_12" id="contact">
                 <h3>CONTACT</h3>
                 <!-- The PHP form will be an include with a control page. -->
@@ -197,7 +196,7 @@
             </div>
             </section>
     
-            <!-- Weather API and social media feeds section in mobile view only. -->
+        <!-- Weather API and social media feeds section in mobile view only. -->
             <aside class="mobileAside">
                 <blockquote>Weather API</blockquote>
                 <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>

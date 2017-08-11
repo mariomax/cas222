@@ -129,10 +129,29 @@ section {
 
 form {
     color: @color2;
-    display: block;
     font-family: @bodyFont;
-    padding: .3em;
+    margin: .2em .8em;
+    padding: .5em;
     text-align: left;
+    label {
+        padding: .5em;
+    }
+    input[type=text] {
+        margin: .5em;
+        padding: .5em;
+        width: 100%;
+    }
+    input[type=radio] {
+        margin: .8em .6em;
+    }
+    input[type=submit] {
+        margin: .5em;
+    }
+    textarea {
+        margin: .5em;
+        padding: .5em;
+        width: 100%;
+    }
 }
 
 aside {
@@ -324,10 +343,5 @@ footer {
         blockquote {
             line-height: 8.5em;    
         } 
-    }
-    
-    /* Removes other full page content from desktop display - template only! */
-    .hideContent {
-        display: none;
     }
 }
