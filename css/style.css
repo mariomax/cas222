@@ -115,10 +115,29 @@ section p {
 }
 form {
   color: #ff0000;
-  display: block;
   font-family: 'Ropa Sans', sans-serif;
-  padding: .3em;
+  margin: .2em .8em;
+  padding: .5em;
   text-align: left;
+}
+form label {
+  padding: .5em;
+}
+form input[type=text] {
+  margin: .5em;
+  padding: .5em;
+  width: 100%;
+}
+form input[type=radio] {
+  margin: .8em .6em;
+}
+form input[type=submit] {
+  margin: .5em;
+}
+form textarea {
+  margin: .5em;
+  padding: .5em;
+  width: 100%;
 }
 aside {
   font-family: 'Ropa Sans', sans-serif;
@@ -273,9 +292,5 @@ footer p {
   }
   .deskAside blockquote {
     line-height: 8.5em;
-  }
-  /* Removes other full page content from desktop display - template only! */
-  .hideContent {
-    display: none;
   }
 }
