@@ -34,10 +34,13 @@
         <?php include ('../includes/form_header.inc.html.php'); ?>
             <section>
                 <h2>Success!</h2>
-                <p>You successfully submitted your info to the database.</p>
+                <p>You successfully submitted your information to the Ace in the Hole database. Thank you!</p>
+                <p>I'll be there as a <?php echo htmlspecialchars($participation, ENT_QUOTES, 'UTF-8'); ?></p>
                 <p>Name: <?php echo htmlspecialchars($c_name, ENT_QUOTES, 'UTF-8'); ?>
                 </p>
                 <p>Email: <?php echo htmlspecialchars($c_email, ENT_QUOTES, 'UTF-8'); ?>
+                </p>
+                <p>Phone #: <?php echo htmlspecialchars($c_phone, ENT_QUOTES, 'UTF-8'); ?>
                 </p>
                 <p>Comment: <?php echo htmlspecialchars($comment, ENT_QUOTES, 'UTF-8'); ?>
                 </p>

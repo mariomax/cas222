@@ -69,30 +69,31 @@ header img {
   display: block;
   margin: auto;
   width: 70%;
+  vertical-align: middle;
 }
 /* This is the styling around the slideshow */
 /* fullSlider is full width in mobile and tablet sizes. */
 .fullSlider {
-  background-color: #ff0000;
-  padding: 2em;
+  padding: 0 2em 1em;
 }
 .fullSlider img {
   display: block;
   margin: auto;
-  max-width: 90%;
+  width: 90%;
 }
 /* sideSlider is the desktop slideshow - it's in a 9_of_12 grid. */
-.sideSlider {
+.deskSlider {
   display: none;
 }
 h1 {
   color: #ff0000;
   font-family: 'Alegreya', serif;
+  font-size: 2em;
   text-align: center;
 }
 h2 {
   color: #000000;
-  font-family: 'Alegreya', serif;
+  font-family: 'Ropa Sans', sans-serif;
   text-align: center;
 }
 h3 {
@@ -212,15 +213,14 @@ footer p {
   }
   /* Header adapted for tablet */
   header img {
-    width: 60%;
+    width: 50%;
+    vertical-align: middle;
   }
   header h1 {
-    padding-top: 1em;
+    font-size: 2em;
   }
   header h2 {
     font-weight: 700;
-    font-size: 1.5em;
-    font-style: italic;
   }
   section h3 {
     font-weight: 700;
@@ -272,15 +272,10 @@ footer p {
     display: none;
   }
   /* Begin viewing partial width slider at desktop size. */
-  .sideSlider {
-    display: block;
-    background-color: #ff0000;
-    padding: 2em;
-  }
-  .sideSlider img {
+  .deskSlider {
     display: block;
     margin: auto;
-    width: 80%;
+    padding: 0 2em;
   }
   /* Removes tablet aside for social media feeds and weather API */
   .tabletAside {
@@ -289,6 +284,7 @@ footer p {
   /* Restores aside for social media feeds and weather API on desktop. */
   .deskAside {
     display: block;
+    padding: 0 1em;
   }
   .deskAside blockquote {
     line-height: 8.5em;

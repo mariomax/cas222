@@ -13,6 +13,10 @@
         <div class="responsive-menu">
             <ul>
                 <li><a href="../index.php">Home</a></li>
+                <li><a href="../index.php#c_details">Courses</a></li>
+                <li><a href="../index.php#register">Register</a></li>
+                <li><a href="../index.php#FAQs">FAQs</a></li>
+                <li><a href="../index.php#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -22,6 +26,10 @@
     <div class="tabletPlus-menu">
         <ul>
             <li><a href="../index.php">Home</a></li>
+            <li><a href="../index.php#c_details">Courses</a></li>
+            <li><a href="../index.php#register">Register</a></li>
+            <li><a href="../index.php#FAQs">FAQs</a></li>
+            <li><a href="../index.php#contact">Contact</a></li>
         </ul>
     </div>
 

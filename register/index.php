@@ -5,6 +5,8 @@ if (isset($_POST['name'])) {
     $sunevent = $_POST['sunevent'];
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $waiver = $_POST['waiver'];
     
     try
     {
@@ -26,7 +28,9 @@ if (isset($_POST['name'])) {
             event = :event,
             sunevent = :sunevent,
             name = :name,
-            email = :email';
+            email = :email,
+            phone = :phone,
+            waiver = :waiver';
         
         // Field names need to match those from the database.
         $s = $pdo->prepare($sql);
@@ -34,6 +38,8 @@ if (isset($_POST['name'])) {
         $s->bindValue(':sunevent', $sunevent);
         $s->bindValue(':name', $name);
         $s->bindValue(':email', $email);
+        $s->bindValue(':phone', $phone);
+        $s->bindValue(':waiver', $waiver);
         // The $_POST['myName'] values need to match the "name" of the form field in the register.html.php file.
 
         $s->execute();

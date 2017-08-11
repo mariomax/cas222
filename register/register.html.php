@@ -23,6 +23,10 @@
             <input type="text" name="name" id="name" required><br>
             <label for="email">*Email:</label><br>
             <input type="text" name="email" id="email" required><br>
-            <input type="submit">
+            <label for="phone">*Phone #:</label><br>
+            <input type="text" name="phone" id="phone" required><br>
+            <label for="waiver">Please, accept the terms of participation.</label>
+            <input type="checkbox" name="waiver" id="waiver" value="I accept the terms." required> I accept.<br>
+            <input type="submit" value="Submit">
         </form>
 </html>

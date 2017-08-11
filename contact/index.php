@@ -1,8 +1,10 @@
 <?php
 
 if (isset($_POST['c_name'])) {
+    $participation = $_POST['participation'];
     $c_name = $_POST['c_name'];
     $c_email = $_POST['c_email'];
+    $c_phone = $_POST['c_phone'];
     $comment = $_POST['comment'];
     
     try
@@ -22,14 +24,18 @@ if (isset($_POST['c_name'])) {
     try
     {
         $sql = 'INSERT INTO contact SET
+            participation = :participation,
             c_name = :c_name,
             c_email = :c_email,
+            c_phone = :c_phone,
             comment = :comment';
         
         // Field names need to match those from the database.
         $s = $pdo->prepare($sql);
+        $s->bindValue(':participation', $participation);
         $s->bindValue(':c_name', $c_name);
         $s->bindValue(':c_email', $c_email);
+        $s->bindValue(':c_phone', $c_phone);
         $s->bindValue(':comment', $comment);
         // The $_POST['myName'] values need to match the "name" of the form field in the contact.html.php file.
 

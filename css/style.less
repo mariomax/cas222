@@ -65,40 +65,44 @@ nav {
 }
  
 header {
+//    background-image: url(../images/cassette.png);
+//    background-repeat: no-repeat;
+//    background-size: 100%;
     margin: auto;
     img {
         display: block;
         margin: auto;
         width: 70%;
+        vertical-align: middle;
     }
 }
 
 /* This is the styling around the slideshow */
 /* fullSlider is full width in mobile and tablet sizes. */
 .fullSlider {
-    background-color: @color2;
-    padding: 2em;
+    padding: 0 2em 1em;
     img {
         display: block;
         margin: auto;
-        max-width: 90%;
+        width: 90%;
     }
 }
 
 /* sideSlider is the desktop slideshow - it's in a 9_of_12 grid. */
-.sideSlider {
+.deskSlider {
     display: none;
 }
 
 h1 {
     color: @color2;
     font-family: @headlineFont;
+    font-size: 2em;
     text-align: center;
 }
 
 h2 {
     color: @color4;
-    font-family: @headlineFont;
+    font-family: @bodyFont;
     text-align: center;
 }
 
@@ -239,15 +243,14 @@ footer {
     /* Header adapted for tablet */
     header {
         img {
-            width: 60%;
+            width: 50%;
+            vertical-align: middle;
         }
         h1 {
-            padding-top: 1em;
+            font-size: 2em;
         }
         h2 {
-            font-weight: 700;
-            font-size: 1.5em;
-            font-style: italic; 
+            font-weight: 700; 
         }
     }
     
@@ -321,15 +324,11 @@ footer {
     }
     
     /* Begin viewing partial width slider at desktop size. */
-    .sideSlider {
+    .deskSlider {
         display: block;
-        background-color: @color2;
-        padding: 2em;
-        img {
-            display: block;
-            margin: auto;
-            width: 80%;
-        }
+//        background-color: @color2;
+        margin: auto;
+        padding: 0 2em;
     }
     
     /* Removes tablet aside for social media feeds and weather API */
@@ -340,6 +339,7 @@ footer {
     /* Restores aside for social media feeds and weather API on desktop. */
     .deskAside {
         display: block;
+        padding: 0 1em;
         blockquote {
             line-height: 8.5em;    
         } 

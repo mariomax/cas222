@@ -13,6 +13,7 @@
         <div class="responsive-menu">
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#c_details">Courses</a></li>
                 <li><a href="#register">Register</a></li>
                 <li><a href="#FAQs">FAQs</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -25,6 +26,7 @@
     <div class="tabletPlus-menu">
         <ul>
             <li><a href="#about">About</a></li>
+            <li><a href="#c_details">Courses</a></li>
             <li><a href="#register">Register</a></li>
             <li><a href="#FAQs">FAQs</a></li>
             <li><a href="#contact">Contact</a></li>
