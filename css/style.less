@@ -65,15 +65,22 @@ nav {
 }
  
 header {
-//    background-image: url(../images/cassette.png);
-//    background-repeat: no-repeat;
-//    background-size: 100%;
     margin: auto;
     img {
         display: block;
         margin: auto;
         width: 70%;
         vertical-align: middle;
+    }
+    h1 {
+        color: @color2;
+        font-family: @headlineFont;
+        font-size: 2em;
+        font-style: italic;
+        text-align: center;
+    }
+    h2 {
+        font-weight: 200;
     }
 }
 
@@ -93,15 +100,8 @@ header {
     display: none;
 }
 
-h1 {
-    color: @color2;
-    font-family: @headlineFont;
-    font-size: 2em;
-    text-align: center;
-}
-
 h2 {
-    color: @color4;
+    color: @color5;
     font-family: @bodyFont;
     text-align: center;
 }
@@ -159,6 +159,7 @@ form {
 }
 
 aside {
+        background-color: @color3;
         font-family: @bodyFont;
         text-align: center;
     /* Using blockquote until <scripts> and <divs> are created for social media and the weather API */
@@ -183,7 +184,7 @@ aside {
 }
 
 footer {
-    background-color: @color4;
+    background-color: @color5;
     color: @color1;
     text-align: center;
     div {
@@ -192,6 +193,9 @@ footer {
             font-size: 2em;
             text-align: center;
             padding: .7em .5em;
+        }
+        img {
+            display: inline-block;
         }
     }
     p {
@@ -219,7 +223,7 @@ footer {
         .tabletPlus-menu {
             display: block;
             ul {
-                background-color: @color4;
+                background-color: @color5;
                 padding: 1.3em;
                 li {
                     display: inline;
@@ -245,12 +249,6 @@ footer {
         img {
             width: 50%;
             vertical-align: middle;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        h2 {
-            font-weight: 700; 
         }
     }
     
@@ -311,10 +309,10 @@ footer {
         }
         h1 {
             padding-top: .8em;
-            font-size: 2.3em;
+            font-size: 2.5em;
         }
         h2 {
-            font-size: 1.9em; 
+            font-size: 1.7em;
         }    
     }
     
@@ -336,10 +334,13 @@ footer {
         display: none;
     }
     
-    /* Restores aside for social media feeds and weather API on desktop. */
+    /* Restores aside for weather API and social media feeds on desktop. */
     .deskAside {
         display: block;
         padding: 0 1em;
+        p {
+            font-size: 1.2em;
+        }
         blockquote {
             line-height: 8.5em;    
         } 

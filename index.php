@@ -24,8 +24,10 @@
     
     <!-- jQuery library script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- Weather API script -->
+    <script src="https://s3-us-west-2.amazonaws.com/reallysimpleweather/reallysimpleweather-1.1.0.min.js"></script>
 </head> 
-
 
 <body>
     <div id="fb-root"></div>
@@ -175,22 +177,60 @@
                 <?php include 'contact/index.php'; ?>
             </div><!-- End 3 of 12 aside for weather & social media. -->
     <!-- Weather API and social media feeds section for desktop only -->
-            <div class="col span_3_of_12">
-            <aside class="deskAside">
+        <div class="col span_3_of_12">
+        <aside class="deskAside">
+            <div id="weather"></div>
+            <script>
+                reallySimpleWeather.weather({
+                    wunderkey: '1a4236851c0b601c', //add your key
+                    location: 'Portland, OR',
+                    woeid: '',
+                    unit: 'f',
+                    success: function(weather) {
+                      html = '<p>'+weather.full + '</p>'; 
+                      html += '<h2>'+weather.temp+'°' + 'F</h2>';
+                      html += '<p>Currently: '+weather.currently+'</p>';
+                      html += '<p>Wind: '+weather.wind.direction+' '+weather.wind.speed+' mph</p>';
+                      html += '<p>Humidity: '+weather.humidity+'</p>'
+                      html += '<p>Feels like: '+weather.feelslike_f+'</p>';
+                      document.getElementById('weather').innerHTML = html;
+                    },
+                    error: function(error) {
+                      document.getElementById('weather').innerHTML = '<p>'+error+'</p>';
+                    }
+                });
+            </script>
+            <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
 
-                <blockquote>Weather API</blockquote>
-                <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
-                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
+        </aside>
+        </div><!-- End 3 of 12 aside for weather & social media. --> 
 
-            </aside>
-            </div><!-- End 3 of 12 aside for weather & social media. --> 
-            
     <!-- Weather API and social media feeds section for tablet only. -->
         <div class="col span_3_of_12">
         <aside class="tabletAside">
-            
-            <blockquote>Weather API</blockquote>
+            <div id="weather-tablet"></div>
+            <script>
+                reallySimpleWeather.weather({
+                    wunderkey: '1a4236851c0b601c', //add your key
+                    location: 'Portland, OR',
+                    woeid: '',
+                    unit: 'f',
+                    success: function(weather) {
+                      html = '<p>'+weather.full + '</p>'; 
+                      html += '<h2>'+weather.temp+'°' + 'F</h2>';
+                      html += '<p>Currently: '+weather.currently+'</p>';
+                      html += '<p>Wind: '+weather.wind.direction+' '+weather.wind.speed+' mph</p>';
+                      html += '<p>Humidity: '+weather.humidity+'</p>'
+                      html += '<p>Feels like: '+weather.feelslike_f+'</p>';
+                      document.getElementById('weather-tablet').innerHTML = html;
+                    },
+                    error: function(error) {
+                      document.getElementById('weather-tablet').innerHTML = '<p>'+error+'</p>';
+                    }
+                });
+            </script>
             <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
@@ -199,13 +239,31 @@
         </div>
    
    </section> 
-        <!-- Weather API and social media feeds section in mobile view only. -->
-            <aside class="mobileAside">
-                <blockquote>Weather API</blockquote>
-                <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
-                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
-            </aside>
+    <!-- Weather API and social media feeds section in mobile view only. -->
+        <aside class="mobileAside">
+            <div id="weather-mobile"></div>
+            <script>
+                reallySimpleWeather.weather({
+                    wunderkey: '1a4236851c0b601c', //add your key
+                    location: 'Portland, OR',
+                    woeid: '',
+                    unit: 'f',
+                    success: function(weather) {
+                      html = '<p>'+weather.full + '</p>'; 
+                      html += '<h2>'+weather.temp+'°' + 'F</h2>';
+                      html += '<p>'+weather.currently+'</p>';
+                      html += '<p>'+weather.wind.direction+' '+weather.wind.speed+' mph</p>';
+                      document.getElementById('weather-mobile').innerHTML = html;
+                    },
+                    error: function(error) {
+                      document.getElementById('weather-mobile').innerHTML = '<p>'+error+'</p>';
+                    }
+                });
+            </script>
+            <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
+        </aside>
 
             <!-- This is the footer from the includes folder. -->
             <?php include 'includes/footer.inc.html.php'; ?>

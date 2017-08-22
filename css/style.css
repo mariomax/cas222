@@ -71,6 +71,16 @@ header img {
   width: 70%;
   vertical-align: middle;
 }
+header h1 {
+  color: #ff0000;
+  font-family: 'Alegreya', serif;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+}
+header h2 {
+  font-weight: 200;
+}
 /* This is the styling around the slideshow */
 /* fullSlider is full width in mobile and tablet sizes. */
 .fullSlider {
@@ -84,12 +94,6 @@ header img {
 /* sideSlider is the desktop slideshow - it's in a 9_of_12 grid. */
 .deskSlider {
   display: none;
-}
-h1 {
-  color: #ff0000;
-  font-family: 'Alegreya', serif;
-  font-size: 2em;
-  text-align: center;
 }
 h2 {
   color: #000000;
@@ -141,12 +145,13 @@ form textarea {
   width: 100%;
 }
 aside {
+  background-color: #dfdfdf;
   font-family: 'Ropa Sans', sans-serif;
   text-align: center;
   /* Using blockquote until <scripts> and <divs> are created for social media and the weather API */
 }
 aside blockquote {
-  border: 3px solid #cfcfcf;
+  border: 3px solid #dfdfdf;
   line-height: 2em;
   padding: .5em;
 }
@@ -170,6 +175,9 @@ footer div .fa {
   font-size: 2em;
   text-align: center;
   padding: .7em .5em;
+}
+footer div img {
+  display: inline-block;
 }
 footer p {
   font-family: 'Ropa Sans', sans-serif;
@@ -206,7 +214,7 @@ footer p {
     text-decoration: none;
   }
   nav .tabletPlus-menu ul li a:visited {
-    color: #cfcfcf;
+    color: #dfdfdf;
   }
   nav .tabletPlus-menu ul li a:hover {
     color: #ff0000;
@@ -215,12 +223,6 @@ footer p {
   header img {
     width: 50%;
     vertical-align: middle;
-  }
-  header h1 {
-    font-size: 2em;
-  }
-  header h2 {
-    font-weight: 700;
   }
   section h3 {
     font-weight: 700;
@@ -262,10 +264,10 @@ footer p {
   }
   header h1 {
     padding-top: .8em;
-    font-size: 2.3em;
+    font-size: 2.5em;
   }
   header h2 {
-    font-size: 1.9em;
+    font-size: 1.7em;
   }
   /* Removing the full width slider from view at desktop size. */
   .fullSlider {
@@ -281,10 +283,13 @@ footer p {
   .tabletAside {
     display: none;
   }
-  /* Restores aside for social media feeds and weather API on desktop. */
+  /* Restores aside for weather API and social media feeds on desktop. */
   .deskAside {
     display: block;
     padding: 0 1em;
+  }
+  .deskAside p {
+    font-size: 1.2em;
   }
   .deskAside blockquote {
     line-height: 8.5em;
