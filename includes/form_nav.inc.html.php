@@ -25,11 +25,11 @@
     <!-- Replace href="xxx" with URLs for actual pages! -->
     <div class="tabletPlus-menu">
         <ul>
-            <li><a href="../index.php">Home</a></li>
-            <li><a href="../index.php#c_details">Courses</a></li>
-            <li><a href="../index.php#register">Register</a></li>
-            <li><a href="../index.php#FAQs">FAQs</a></li>
-            <li><a href="../index.php#contact">Contact</a></li>
+            <li><a href="/ace/index.php">Home</a></li>
+            <li><a href="/ace/index.php#c_details">Courses</a></li>
+            <li><a href="/ace/index.php#register">Register</a></li>
+            <li><a href="/ace/index.php#FAQs">FAQs</a></li>
+            <li><a href="/ace/index.php#contact">Contact</a></li>
         </ul>
     </div>
 

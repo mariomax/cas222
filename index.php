@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="description" content="Ace in the Hole MultiSport Events. Inclusive, safe, and fun triathalons.">
     <title>Ace in the Hole</title>
     
     <!-- Google fonts. Headline then Body font. -->
@@ -19,8 +20,8 @@
     <!-- Font Awesome! -->
     <script src="https://use.fontawesome.com/ef441b60f1.js"></script>
     
-    <!-- Include the 32 x 32 px favicon for the browser tab. -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Include the 64 x 64 px favicon for the browser tab. -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"> 
     
     <!-- jQuery library script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -30,6 +31,7 @@
 </head> 
 
 <body>
+    <!-- Script for the Facebook feed. --> 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -39,10 +41,10 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     
-    <!-- This is the navigation from the includes folder. -->
+    <!-- Navigation from the includes folder. -->
     <?php include 'includes/nav.inc.html.php'; ?>
     
-    <!-- This is the header from the includes folder. -->
+    <!-- Header from the includes folder. -->
     <?php include 'includes/header.inc.html.php'; ?>
     
 <main>   
@@ -53,14 +55,12 @@
         
             <img src="images/solo_run750.png" alt="image" class="fullSlider">
             
-
     <!-- JavaScript slideshow for desktop.
         <div class="sideSlider col span_9_of_12">
             <img src="images/image_wf.png" alt="image">
         </div>              
     -->
         
-    <!-- About page content goes here. -->
         <div class="col span_9_of_12">
             
             <img src="images/solo_run1200.png" alt="image" class="deskSlider">
@@ -113,7 +113,7 @@
             <ul>
                 <li>Long Course - 7:00 am</li>
                 <li>Olympic - 7:30 am</li>
-                <li>10K - 7:15</li>
+                <li>10K - 7:15 am</li>
                 <li>Half Marathon - 7:15 am</li>
             </ul>
             
@@ -126,7 +126,7 @@
             </ul>
             
             <h3 id="register">REGISTRATION</h3>
-        <!-- The PHP form will be an include with a control page.  -->
+        <!-- Registration form control page from its folder.  -->
             <?php include 'register/index.php'; ?>
             
             <h3>COURSE PRICES</h3>
@@ -161,82 +161,31 @@
             <!-- FAQ content goes here. -->
             
             <h3 id="FAQs">FAQs</h3>
-                <p><span class="q">What are the Rules?</span> We currently adhere to the USAT Rules for Triathlon & Duathlon.  Important rules include no drafting, you must wear a helmet and music is ABSOLUTELY NOT allowed during the bike for obvious safety reasons.</p>
-                <p><span class="q">Can I use a personal music device while cycling?</span> Absolutely no music devices are allowed during the bike segment for obvious safety risks and will result in immediate disqualification.</p>
-                <p><span class="q">Can I use a personal music device while running?</span> During any running segments, we prefer for athletes to NOT use music devices to maximize safety, assure a fair competitive environment and assure athletes can hear all course marshal instructions. With that said, we also understand that many athletes rely on music to help endure the challenge of running. To accommodate the needs of our athletes while still assuring maximum safety and a fair, competitive environment, here is the arrangement that we can accommodate.</p>
+                <p><span class="q">What are the Rules? </span> We currently adhere to the USAT Rules for Triathlon & Duathlon.  Important rules include no drafting, you must wear a helmet and music is ABSOLUTELY NOT allowed during the bike for obvious safety reasons.</p>
+                <p><span class="q">Can I use a personal music device while cycling? </span> Absolutely no music devices are allowed during the bike segment for obvious safety risks and will result in immediate disqualification.</p>
+                <p><span class="q">Can I use a personal music device while running? </span> During any running segments, we prefer for athletes to NOT use music devices to maximize safety, assure a fair competitive environment and assure athletes can hear all course marshal instructions. With that said, we also understand that many athletes rely on music to help endure the challenge of running. To accommodate the needs of our athletes while still assuring maximum safety and a fair, competitive environment, here is the arrangement that we can accommodate.</p>
                 <p>If you chose to use a personal music device, you must always keep one ear open for instructions so only one ear-bud can be used at any time. In addition, if you opt to use music, you will not be eligible for awards, points and rankings. So as an athlete, you have to make a choice…music or awards/points/rankings.</p>
                 <p>If you are using a personal music devise with two earbuds, you will be immediately disqualified. Trust us, we don’t want to have to enforce a disqualification but in order to assure the safety of all athletes, this is a very important rule.</p>
                 <p>We also request that if you chose to use a personal music device that you keep the volume to a minimum to assure all instructions can be heard.</p>
-                <p><span class="q">Do I need to wear a wetsuit?</span>  No, you do not need to wear a wetsuit. Many will not wear a wetsuit while others will choose to wear a wetsuit because of the buoyancy and warmth factor. </p>
-                <p><span class="q">Do I have to use a road or racing bike?</span>  No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</p>
+                <p><span class="q">Do I need to wear a wetsuit? </span>  No, you do not need to wear a wetsuit. Many will not wear a wetsuit while others will choose to wear a wetsuit because of the buoyancy and warmth factor. </p>
+                <p><span class="q">Do I have to use a road or racing bike? </span>  No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</p>
     
-        <!-- Contact content goes here. -->
-            
+        <!-- Contact section. -->
                 <h3 id="contact">CONTACT</h3>
-                <!-- The PHP form will be an include with a control page. -->
+                <!-- Contact form control page from its folder. -->
                 <?php include 'contact/index.php'; ?>
-            </div><!-- End 3 of 12 aside for weather & social media. -->
-    <!-- Weather API and social media feeds section for desktop only -->
+            
+            </div><!-- End 9 of 12 for main content. -->
+            
+    <!-- Weather API and social media feeds section for desktop only. -->
         <div class="col span_3_of_12">
-        <aside class="deskAside">
-            <div id="weather"></div>
-            <script>
-                reallySimpleWeather.weather({
-                    wunderkey: '1a4236851c0b601c', //add your key
-                    location: 'Portland, OR',
-                    woeid: '',
-                    unit: 'f',
-                    success: function(weather) {
-                      html = '<p>'+weather.full + '</p>'; 
-                      html += '<h2>'+weather.temp+'°' + 'F</h2>';
-                      html += '<p>Currently: '+weather.currently+'</p>';
-                      html += '<p>Wind: '+weather.wind.direction+' '+weather.wind.speed+' mph</p>';
-                      html += '<p>Humidity: '+weather.humidity+'</p>'
-                      html += '<p>Feels like: '+weather.feelslike_f+'</p>';
-                      document.getElementById('weather').innerHTML = html;
-                    },
-                    error: function(error) {
-                      document.getElementById('weather').innerHTML = '<p>'+error+'</p>';
-                    }
-                });
-            </script>
-            <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
-            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
-
-        </aside>
-        </div><!-- End 3 of 12 aside for weather & social media. --> 
+<!--            <?php include 'includes/feeds_desktop.inc.html.php'; ?>-->
+        </div><!-- End 3 of 12 aside for weather & social media in desktop only. --> 
 
     <!-- Weather API and social media feeds section for tablet only. -->
         <div class="col span_3_of_12">
-        <aside class="tabletAside">
-            <div id="weather-tablet"></div>
-            <script>
-                reallySimpleWeather.weather({
-                    wunderkey: '1a4236851c0b601c', //add your key
-                    location: 'Portland, OR',
-                    woeid: '',
-                    unit: 'f',
-                    success: function(weather) {
-                      html = '<p>'+weather.full + '</p>'; 
-                      html += '<h2>'+weather.temp+'°' + 'F</h2>';
-                      html += '<p>Currently: '+weather.currently+'</p>';
-                      html += '<p>Wind: '+weather.wind.direction+' '+weather.wind.speed+' mph</p>';
-                      html += '<p>Humidity: '+weather.humidity+'</p>'
-                      html += '<p>Feels like: '+weather.feelslike_f+'</p>';
-                      document.getElementById('weather-tablet').innerHTML = html;
-                    },
-                    error: function(error) {
-                      document.getElementById('weather-tablet').innerHTML = '<p>'+error+'</p>';
-                    }
-                });
-            </script>
-            <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
-            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
-            
-        </aside>
-        </div>
+<!--            <?php include 'includes/feeds_tablet.inc.html.php'; ?>-->
+        </div><!-- End 3 of 12 aside for weather & social media in desktop only. -->
    
    </section> 
     <!-- Weather API and social media feeds section in mobile view only. -->
@@ -263,9 +212,9 @@
             <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote></div>
-        </aside>
+        </aside><!-- End aside for weather & social media in mobile only. -->
 
-            <!-- This is the footer from the includes folder. -->
+            <!-- Footer from the includes folder. -->
             <?php include 'includes/footer.inc.html.php'; ?>
  </main>   
             <!-- jQuery hamburger menu control -->
