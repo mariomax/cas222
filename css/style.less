@@ -11,59 +11,72 @@ Programmer: Mario Lopriore
 @import 'palette.less';
 
 /* Styling the navigation */
+
 nav {
-    margin-top: 1em;
+    background-color: @color5;
     line-height: 2em;
+    padding: .5em;
     text-align: center;
     ul {
         li {
             font-family: @bodyFont;
+            list-style-type: none;
         }
     }
-    .tabletPlus-menu {
+    .tablet-desk-menu {
         display: none;
     }
 }
 
+.mobile-nav {
+    margin: .5em auto;
+}
+
+
 /* Mobile navigation styling classes for JavaScript menu */
+
 .menu-btn div {
-	position: absolute;
-	left: 100%;
-	top: 64%;
-	padding-right: 8px;
-	margin-top: -0.50em;
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: 200;
-	vertical-align: middle;
-	z-index: 99;
+    position: absolute;
+    left: 100%;
+    top: 64%;
+    padding-right: 8px;
+    margin-top: -0.50em;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 200;
+    vertical-align: middle;
+    z-index: 99;
 }
 
-/* This is the hamburger's horizontal lines */
+
+/* This is for the hamburger's horizontal lines. */
+
 .menu-btn span {
-	display: block;
-	width: 19px;
-	height: 3px;
-	margin: 4px auto;
-	background: rgb(0,0,0);
-	z-index: 99;
+    display: block;
+    width: 19px;
+    height: 3px;
+    margin: 4px auto;
+    background: @color1;
+    z-index: 99;
 }
 
-/* The styling for the links in the dropdown menu */
-.responsive-menu{
-	display: none;
+
+/* The styling for the links in the dropdown menu. */
+
+.responsive-menu {
+    display: none;
     a {
-        color: @color2;
+        color: @color1;
         font-size: 1.1em;
         line-height: 2.8;
         text-decoration: none;
     }
 }
- 
+
 .expand {
-	display: block !important; 
+    display: block !important;
 }
- 
+
 header {
     margin: auto;
     img {
@@ -72,51 +85,110 @@ header {
         width: 70%;
         vertical-align: middle;
     }
-    h1 {
-        color: @color2;
-        font-family: @headlineFont;
-        font-size: 2em;
-        font-style: italic;
-        text-align: center;
-    }
-    h2 {
-        font-weight: 200;
-    }
 }
+
+
+/* Removing the tablet & desktop header. */
+
+.fullHeader {
+    display: none;
+}
+
+
+/* Removing the h1 from Mobile on success and 404error pages. */
+
+.result_h1 {
+    display: none;
+}
+
+#hideH1 {
+    display: none;
+}
+
 
 /* This is the styling around the slideshow */
-/* fullSlider is full width in mobile and tablet sizes. */
-.fullSlider {
-    padding: 0 2em 1em;
-    img {
-        display: block;
-        margin: auto;
-        width: 90%;
-    }
-}
 
-/* sideSlider is the desktop slideshow - it's in a 9_of_12 grid. */
+
+/* Removing the desktop slider display */
+
 .deskSlider {
     display: none;
 }
 
-h2 {
-    color: @color5;
-    font-family: @bodyFont;
-    text-align: center;
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
 
-h3 {
-    font-family: @headlineFont;
-    text-align: center;
+.mySlides {
+    display: none;
 }
 
-h4 {
-    font-family: @bodyFont;
-    margin-left: 2em;
+.myOtherSlides {
+    display: none;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 section {
+    h2 {
+        color: @color5;
+        font-family: @bodyFont;
+        text-align: center;
+    }
+    h3 {
+        font-family: @headlineFont;
+        font-size: 1.3em;
+        text-align: center;
+    }
+    h4 {
+        background-color: @color3;
+        border-left: @color2 5px solid;
+        font-family: @bodyFont;
+        margin: .5em 1em .3em;
+        padding: 1em;
+    }
+    h5 {
+        font-family: @bodyFont;
+        font-size: 1.2em;
+        margin: .5em 1.5em;
+    }
+    h6 {
+        color: @color4;
+        font-family: @bodyFont;
+        font-size: .8em;
+        margin: .5em 3em;
+    }
     ul {
         li {
             font-family: @bodyFont;
@@ -125,25 +197,40 @@ section {
         }
     }
     p {
+        color: @color5;
         font-family: @bodyFont;
         padding: .7em;
-        line-height: 1.2em;
+        line-height: 1.3em;
     }
 }
 
+
+/* These h4s are slightly different from the others. */
+
+.days {
+    background-color: @color1;
+    border: none;
+}
+
 form {
-    color: @color2;
+    color: @color4;
     font-family: @bodyFont;
     margin: .2em .8em;
     padding: .5em;
     text-align: left;
+    h5 {
+        color: @color5;
+        font-size: 1.2em;
+        margin: .5em;
+    }
     label {
         padding: .5em;
     }
     input[type=text] {
+        font-family: @bodyFont;
         margin: .5em;
         padding: .5em;
-        width: 100%;
+        width: 95%;
     }
     input[type=radio] {
         margin: .8em .6em;
@@ -152,34 +239,55 @@ form {
         margin: .5em;
     }
     textarea {
+        font-family: @bodyFont;
         margin: .5em;
         padding: .5em;
-        width: 100%;
+        width: 95%;
     }
+}
+
+
+/* Style here to move the input areas away from the fields. */
+
+.inputArea {
+    margin: 1em 0;
 }
 
 aside {
-        background-color: @color3;
-        font-family: @bodyFont;
-        text-align: center;
-    /* Using blockquote until <scripts> and <divs> are created for social media and the weather API */
-    blockquote {
-        border: 3px solid @color3;
-        line-height: 2em;
-        padding: .5em;
-    }
+    background-color: @color3;
+    font-family: @bodyFont;
+    padding: .5em;
+    text-align: center;
 }
 
-.q {
+.weather {
+    padding: 1em;
+}
+
+.faq {
     font-style: italic;
+    font-weight: 600;
+    padding: 0 .3em 0 0;
 }
 
-/* Removes tablet and desktop asides from cascade until tablet size. */
+
+/* Removing the desktop aside display */
+
 .tabletAside {
     display: none;
 }
 
+
+/* Removing the desktop aside display */
+
 .deskAside {
+    display: none;
+}
+
+
+/* Image at the bottom next to the contact form - tablet & desktop only. */
+
+.finish {
     display: none;
 }
 
@@ -205,36 +313,35 @@ footer {
     }
 }
 
+
 /* Tablet CSS code and up */
+
 @media only screen and (min-width: 481px) {
-    
-    /* This is the navigation out of the hamburger menu. */
+    /* This is the navigation outside of the hamburger menu. */
     .menu-btn {
         display: none;
     }
-    
     /* Removing the hamburger menu from tablet size and up. */
     .responsive-menu {
         display: none;
     }
-    
     nav {
         margin-top: 0;
-        .tabletPlus-menu {
+        .tablet-desk-menu {
             display: block;
             ul {
                 background-color: @color5;
-                padding: 1.3em;
+                padding: 1em;
                 li {
                     display: inline;
                     font-size: 1.5em;
-                    padding: 0 1.5em;
+                    padding: 0 1.3em;
                     a {
                         color: @color1;
                         text-decoration: none;
                     }
                     a:visited {
-                        color: @color3; 
+                        color: @color3;
                     }
                     a:hover {
                         color: @color2;
@@ -243,98 +350,147 @@ footer {
             }
         }
     }
-    
+    /* Removing the mobile header. */
+    .mobileHeader {
+        display: none;
+    }
+    /* Restoring the tablet & desktop header. */
+    .fullHeader {
+        display: block;
+    }
     /* Header adapted for tablet */
     header {
         img {
             width: 50%;
             vertical-align: middle;
         }
+        h1 {
+            color: @color2;
+            font-family: @headlineFont;
+            font-size: 2em;
+            font-style: italic;
+            margin: .5em;
+            text-align: center;
+        }
+        h2 {
+            font-weight: 200;
+        }
     }
-    
     section {
         h3 {
             font-weight: 700;
             font-size: 1.5em;
             font-style: italic;
+            padding: 0 2em;
+            text-align: left;
         }
         p {
             padding: .5em 2em;
             line-height: 1.5em;
-        } 
+        }
+        ul {
+            li {
+                font-family: @bodyFont;
+                line-height: 1.8em;
+                margin-left: 3em;
+            }
+        }
     }
-    
     aside {
         blockquote {
             line-height: 5.5em;
         }
     }
-    
     form {
         text-align: left;
         label {
             padding: .5em;
         }
     }
-    
-    /* Restoring the tablet display. */
-    .tabletAside {
-        display: block;
-    }
-    
-    /* Removing the mobile display. */
+    /* Removing the mobile aside display. */
     .mobileAside {
         display: none;
     }
-    
+    /* Restoring the tablet aside display. */
+    .tabletAside {
+        display: block;
+    }
+    .finish {
+        display: block;
+        margin: 2em auto;
+        width: 75%;
+    }
     footer {
         clear: both;
     }
 }
 
+
 /* Desktop CSS code and up */
+
 @media only screen and (min-width: 1025px) {
-    
     nav {
         ul {
+            text-align: right;
             li {
-                padding: 2.5em; 
+                a {
+                    font-size: .8em;
+                    padding: .5em .8em;
+                }
             }
         }
     }
-    
     header {
         img {
-            width: 50%;
+            width: 30%;
         }
         h1 {
-            padding-top: .8em;
             font-size: 2.5em;
         }
         h2 {
             font-size: 1.7em;
-        }    
+        }
     }
-    
-    /* Removing the full width slider from view at desktop size. */
-    .fullSlider {
+    section {
+        h4 {
+            font-size: 1.2em;
+            margin: .8em 2em .3em;
+        }
+        h5 {
+            margin: 1em 4.5em;
+        }
+        h6 {
+            font-size: 1.2em;
+            margin: .5em 5em;
+        }
+        p {
+            font-size: 1.2em;
+            padding: .5em 3em;
+        }
+        ul {
+            li {
+                margin-left: 5em;
+            }
+        }
+    }
+    form {
+        margin-left: 3em;
+    }
+    /* Removing the mobile & tablet slider display */
+    .mobileSlider {
         display: none;
     }
-    
-    /* Begin viewing partial width slider at desktop size. */
-    .deskSlider {
-        display: block;
-//        background-color: @color2;
-        margin: auto;
-        padding: 0 2em;
-    }
-    
-    /* Removes tablet aside for social media feeds and weather API */
+    /* Removing the tablet aside display. */
     .tabletAside {
         display: none;
     }
-    
-    /* Restores aside for weather API and social media feeds on desktop. */
+    /* Restore the desktop slider display. */
+    .deskSlider {
+        display: block;
+        margin: auto;
+        padding: 0 2em;
+    }
+    /* Restoring the desktop aside display. */
     .deskAside {
         display: block;
         padding: 0 1em;
@@ -342,7 +498,21 @@ footer {
             font-size: 1.2em;
         }
         blockquote {
-            line-height: 8.5em;    
-        } 
+            line-height: 8.5em;
+        }
+    }
+    /* Caption text */
+    .text {
+        color: @color1;
+        font-family: @bodyFont;
+        font-size: 1.5em;
+        padding: .5em .8em;
+        position: absolute;
+        bottom: .5em;
+        width: 100%;
+        text-align: center;
+    }
+    .finish {
+        width: 50%;
     }
 }

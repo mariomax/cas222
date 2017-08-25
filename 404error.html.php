@@ -26,15 +26,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
+
 <body>
 
     <main>
         <?php include ('includes/form_nav.inc.html.php'); ?>
         <?php include ('includes/404_header.inc.html.php'); ?>
-            <section>
-                <h2>Whoops! There was an error and now you're here.</h2>
-                <h2>Just use the navigation to go back to our site.</h2>
-            </section>
+        <section>
+            <h5>Whoops! There was some sort of error and now you're here.</h5>
+            <h5>Don't worry - just use the navigation to go back to our site.</h5>
+        </section>
         <?php include ('includes/footer.inc.html.php'); ?>
     </main>
 

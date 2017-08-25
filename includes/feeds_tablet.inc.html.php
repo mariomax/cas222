@@ -1,5 +1,5 @@
 <aside class="tabletAside">
-    
+
     <div id="weather-tablet"></div>
     <script>
         reallySimpleWeather.weather({

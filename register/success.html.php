@@ -19,8 +19,8 @@
     <!-- Font Awesome! -->
     <script src="https://use.fontawesome.com/ef441b60f1.js"></script>
 
-    <!-- Include the 32 x 32 px favicon for the browser tab. -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Include the 64 x 64 px favicon for the browser tab. -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
     <!-- jQuery library script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
