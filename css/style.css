@@ -297,8 +297,13 @@ footer p {
     display: block;
   }
   /* Header adapted for tablet */
+  header {
+    background-image: url(../images/cassette.70.png);
+    margin-bottom: 1.5em;
+  }
   header img {
     width: 50%;
+    margin: 2em auto;
     vertical-align: middle;
   }
   header h1 {
@@ -306,7 +311,7 @@ footer p {
     font-family: 'Alegreya', serif;
     font-size: 2em;
     font-style: italic;
-    margin: .5em;
+    margin: 1.2em;
     text-align: center;
   }
   header h2 {
@@ -368,6 +373,7 @@ footer p {
   }
   header h1 {
     font-size: 2.5em;
+    margin: 1.1em;
   }
   header h2 {
     font-size: 1.7em;
