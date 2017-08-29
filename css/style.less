@@ -106,10 +106,14 @@ header {
 }
 
 
-/* This is the styling around the slideshow */
+/* This is the styling around the slideshow. */
 
 
-/* Removing the desktop slider display */
+/* Removing the slider for all displays. */
+
+.mobileSlider {
+    display: none;
+}
 
 .deskSlider {
     display: none;
@@ -260,6 +264,14 @@ aside {
     text-align: center;
 }
 
+.twitter-timeliine {
+    padding-top: .5em;
+}
+
+.fb-page {
+    padding-top: .5em;
+}
+
 .weather {
     padding: 1em;
 }
@@ -361,6 +373,7 @@ footer {
     /* Header adapted for tablet */
     header {
         background-image: url(../images/cassette.70.png);
+        background-size: cover;
         margin-bottom: 1.5em;
         img {
             width: 50%;
@@ -372,7 +385,8 @@ footer {
             font-family: @headlineFont;
             font-size: 2em;
             font-style: italic;
-            margin: 1.2em;
+            font-weight: 600;
+            margin: 1.2em 0;
             text-align: center;
         }
         h2 {
@@ -409,6 +423,10 @@ footer {
         label {
             padding: .5em;
         }
+    }
+    /* Adding the slider to tablet view - it was removed in mobile. :( */
+    .mobileSlider {
+        display: block;
     }
     /* Removing the mobile aside display. */
     .mobileAside {

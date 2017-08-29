@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <meta name="description" content="Ace in the Hole MultiSport Events. Inclusive, safe, and fun triathalons.">
-    <title>Ace in the Hole</title>
+    <title>Ace in the Hole MultiSport Events</title>
 
     <!-- Google fonts. Headline then Body font. -->
     <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
@@ -313,7 +313,7 @@
                 <?php include 'contact/index.php'; ?>
             </div>
             <div class="col span_6_of_12">
-                <img src="images/ace_bike_finish.png" alt="finish line" class="finish">
+                <img src="images/ace_bike_finish.png" alt="cyclist at the finish line" class="finish">
             </div>
         </section>
 
@@ -337,10 +337,11 @@
                         document.getElementById('weather-mobile').innerHTML = '<p>' + error + '</p>';
                     }
                 });
+                
             </script>
-            <a class="twitter-timeline" href="https://twitter.com/pcccas222">Tweets by pcccas222</a>
+            <a class="twitter-timeline" href="https://twitter.com/pcccas222" data-height="500">Tweets by pcccas222</a>
             <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+            <div class="fb-page" data-href="https://www.facebook.com/cas222cascade/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-height="500">
                 <blockquote cite="https://www.facebook.com/cas222cascade/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/cas222cascade/">CAS 222</a></blockquote>
             </div>
         </aside>

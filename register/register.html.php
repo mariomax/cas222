@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Ace in the Hole Registration</title>
+        <title>Ace in the Hole MultiSport Events Registration</title>
         <link rel="stylesheet" href="styles.css">
     </head>
         <form method="post" action="register/index.php">

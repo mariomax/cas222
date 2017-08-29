@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Ace Registration</title>
+    <title>Registration Success</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 
     <!-- Google fonts. Headline then Body font. -->
